@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D750 Photo Guide Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json"> </head>
+</head>
+<body>
+    <div class="container">
+        <h1>Guide de Réglages Nikon D750</h1>
+
+        <div class="scenario-list" id="scenarioList">
+            </div>
+
+        <div class="scenario-detail" id="scenarioDetail" style="display:none;">
+            <button id="backToList" style="display:none;">Retour à la liste</button>
+            <h2 id="detailTitle"></h2>
+            <div id="detailContent"></div>
+
+            <div id="ndCalculator" style="display:none;">
+                <h3>Calculateur de Temps de Pose ND</h3>
+                <label for="shutterSpeedNoFilter">Vitesse sans filtre (en secondes):</label>
+                <input type="number" id="shutterSpeedNoFilter" step="0.01" value="1" min="0.01">
+                <br>
+                <label for="ndFactor">Filtre ND (nombre de stops):</label>
+                <select id="ndFactor"></select>
+                <br>
+                <button id="calculateNd">Calculer</button>
+                <p>Temps de pose calculé: <span id="calculatedTime">0s</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
