@@ -2,7 +2,7 @@
     "name": "Guide D750",
     "short_name": "D750 Guide",
     "description": "Votre guide de réglages pour le Nikon D750",
-    "start_url": "/index.html",
+    "start_url": "/PhotoGuide/index.html",
     "display": "standalone",
     "background_color": "#f0f2f5",
     "theme_color": "#0056b3",
